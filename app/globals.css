@@ -4,8 +4,16 @@
 
 
   @layer base{
+    html{
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+    
     body{
       @apply font-primary bg-primary text-white leading-loose;
+      background-image: 
+        radial-gradient(ellipse 80% 80% at 50% -20%, rgba(0, 255, 153, 0.03), transparent),
+        radial-gradient(ellipse 80% 80% at 80% 80%, rgba(0, 255, 153, 0.02), transparent);
     }
 
     .h1{
@@ -18,12 +26,176 @@
       @apply text-[20px] xl:text-[24px] leading-[1.1] font-semibold;
     }
     .text-outline{
-      -webkit-text-stroke:1px #ffffff;
-      }
+      -webkit-text-stroke: 1px #ffffff;
+      color: transparent;
+    }
       
-      .text-outline-hover{
-      -webkit-text-stroke:1px #00ff99;
-        }
+    .text-outline-hover{
+      -webkit-text-stroke: 1px #00ff99;
+      color: #00ff99;
+    }
+
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+    
+    ::-webkit-scrollbar-track {
+      background: #1e1e24;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+      background: #00ff99;
+      border-radius: 3px;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+      background: #00cc7a;
+    }
+
+    /* Selection styles */
+    ::selection {
+      background-color: #00ff99;
+      color: #1c1c22;
+    }
+
+    /* Focus styles */
+    :focus {
+      outline: 2px solid #00ff99;
+      outline-offset: 2px;
+    }
+
+    /* Advanced animations */
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0px);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+    }
+
+    @keyframes glow {
+      0%, 100% {
+        box-shadow: 0 0 20px rgba(0, 255, 153, 0.3);
+      }
+      50% {
+        box-shadow: 0 0 40px rgba(0, 255, 153, 0.6);
+      }
+    }
+
+    @keyframes slideInFromLeft {
+      0% {
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideInFromRight {
+      0% {
+        transform: translateX(100%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        transform: translateY(30px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes sparkle {
+      0%, 100% {
+        opacity: 0;
+        transform: scale(0);
+      }
+      50% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    /* Utility classes for animations */
+    .animate-float {
+      animation: float 6s ease-in-out infinite;
+    }
+
+    .animate-glow {
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    .animate-slide-in-left {
+      animation: slideInFromLeft 0.8s ease-out;
+    }
+
+    .animate-slide-in-right {
+      animation: slideInFromRight 0.8s ease-out;
+    }
+
+    .animate-fade-in-up {
+      animation: fadeInUp 0.6s ease-out;
+    }
+
+    .animate-sparkle {
+      animation: sparkle 1.5s ease-in-out infinite;
+    }
+
+    /* Hover effects */
+    .hover-lift {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .hover-lift:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 255, 153, 0.2);
+    }
+
+    /* Magnetic effect */
+    .magnetic {
+      transition: transform 0.2s ease;
+    }
+
+    /* Glass morphism effect */
+    .glass {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    /* Gradient text animation */
+    .gradient-text {
+      background: linear-gradient(-45deg, #00ff99, #00cc7a, #00ff99, #66ffcc);
+      background-size: 400% 400%;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: gradientShift 3s ease infinite;
+    }
+
+    @keyframes gradientShift {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
   }
   
 

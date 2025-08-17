@@ -1,2 +1,0 @@
-Portfolio:-
--> all my updation will be done in the app folder including page.jsx file
