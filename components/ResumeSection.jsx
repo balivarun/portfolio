@@ -58,7 +58,7 @@ const education = {
     {
       college: "St. Joseph School, Ambala City",
       description: "Upto 10th",
-      duration: "2007-20019",
+      duration: "2007-2019",
     },
   ],
 };
@@ -157,20 +157,20 @@ const ResumeSection = () => {
             {/* Tab Navigation */}
             <div className="lg:col-span-1">
               <TabsList className="flex lg:flex-col w-full gap-4 bg-transparent">
-                <TabsTrigger 
-                  value="education" 
+                <TabsTrigger
+                  value="education"
                   className="w-full justify-start text-left p-4 bg-[#232329] border border-white/10 hover:border-accent/30 data-[state=active]:bg-accent data-[state=active]:text-primary transition-all duration-300"
                 >
                   Education
                 </TabsTrigger>
-                <TabsTrigger 
-                  value="skill" 
+                <TabsTrigger
+                  value="skill"
                   className="w-full justify-start text-left p-4 bg-[#232329] border border-white/10 hover:border-accent/30 data-[state=active]:bg-accent data-[state=active]:text-primary transition-all duration-300"
                 >
                   Skills
                 </TabsTrigger>
-                <TabsTrigger 
-                  value="about" 
+                <TabsTrigger
+                  value="about"
                   className="w-full justify-start text-left p-4 bg-[#232329] border border-white/10 hover:border-accent/30 data-[state=active]:bg-accent data-[state=active]:text-primary transition-all duration-300"
                 >
                   About me
@@ -187,7 +187,7 @@ const ResumeSection = () => {
                     <h3 className="text-3xl lg:text-4xl font-bold mb-4">{education.tittle}</h3>
                     <p className="text-white/60 text-lg leading-relaxed">{education.description}</p>
                   </div>
-                  
+
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {education.items.map((item, index) => (
                       <motion.div
@@ -221,7 +221,7 @@ const ResumeSection = () => {
                     <h3 className="text-3xl lg:text-4xl font-bold mb-4">{skill.tittle}</h3>
                     <p className="text-white/60 text-lg leading-relaxed">{skill.description}</p>
                   </div>
-                  
+
                   <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
                     {skill.skilllist.map((skillItem, index) => (
                       <motion.div
@@ -258,7 +258,7 @@ const ResumeSection = () => {
                     <h3 className="text-3xl lg:text-4xl font-bold mb-4">{about.tittle}</h3>
                     <p className="text-white/60 text-lg leading-relaxed">{about.description}</p>
                   </div>
-                  
+
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {about.info.map((item, index) => (
                       <motion.div
