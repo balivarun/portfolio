@@ -24,11 +24,11 @@ const projects = [
   },
   {
     id: 3,
-    title: "Coming Soon",
-    description: "Exciting project in development that will showcase cutting-edge technology and innovative solutions.",
-    techStack: "",
-    image: null,
-    status: "upcoming"
+    title: "Rock Paper Scissors Game",
+    description: "Developed a classic Rock Paper Scissors game using Python with an interactive command-line interface. Implemented game logic with random library for computer choices, user input validation, and dynamic score tracking system. Features include real-time score updates, game statistics, and multiple rounds gameplay with clean user experience and robust error handling.",
+    techStack: "Python, Random Library, Command Line Interface, Game Logic, Score Tracking, Input Validation",
+    image: "/rock_paper.png",
+    status: "completed"
   }
 ];
 

@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import { Button } from "./ui/button";
 
@@ -6,6 +8,14 @@ import Nav from "./Nav";
 import MobileNav from "./MobileNav";
 
 const Header = () => {
+  const handleHireMeClick = (e) => {
+    e.preventDefault();
+    const element = document.getElementById("contact");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <header className="py-12 xl:py-16 text-white">
       <div className="container mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8">
@@ -18,9 +28,9 @@ const Header = () => {
         {/* desktop nav and hire me button */}
         <div className="hidden xl:flex items-center gap-8">
           <Nav />
-          <Link href="/contact">
-            <Button>Hire me</Button>
-          </Link>
+          <Button onClick={handleHireMeClick} className="hover:scale-105 transition-transform duration-300">
+            Hire me
+          </Button>
         </div>
 
         {/* mobile navbar*/}

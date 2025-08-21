@@ -18,7 +18,7 @@ const Home = () => {
       <AnimatedBackground />
       <FloatingShapes />
       <ScrollProgress />
-      
+
       {/* Home Section */}
       <section id="home" className="min-h-screen flex items-center relative z-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -27,12 +27,12 @@ const Home = () => {
             <div className="xl:col-span-7 text-center xl:text-left order-2 xl:order-1">
               <div className="space-y-6">
                 <div className="inline-block px-4 py-2 bg-accent/10 rounded-full border border-accent/20">
-                  <TypewriterEffect 
+                  <TypewriterEffect
                     texts={["Software Developer", "Full Stack Developer", "Problem Solver", "Tech Innovator"]}
                     className="text-accent font-medium"
                   />
                 </div>
-                
+
                 <h1 className="text-4xl sm:text-5xl xl:text-7xl font-bold leading-tight">
                   Hello I'm{" "}
                   <br className="hidden sm:block" />
@@ -40,16 +40,14 @@ const Home = () => {
                     Varun Bali
                   </span>
                 </h1>
-                
+
                 <p className="text-lg text-white/80 max-w-[600px] leading-relaxed mx-auto xl:mx-0">
-                  As a dedicated and ambitious third-year Computer Science and
-                  Engineering student, I have honed my skills in various programming
-                  languages including Python, frontend, and C++. My academic journey
-                  has been complemented by practical experiences, such as developing
-                  a dynamic web application for a local business using React.js and
-                  Node.js.
+                  As a dedicated and motivated Computer Science Engineering student, I aim to leverage my strong foundation in
+programming, data structures, and software development to contribute to innovative projects.Committed to
+continuous learning, problem-solving, and collaborating within dynamic teams to develop impactful technology
+solutions.
                 </p>
-                
+
                 {/* CTA and Social */}
                 <div className="flex flex-col sm:flex-row items-center justify-center xl:justify-start gap-6 pt-4">
                   <a
@@ -66,7 +64,7 @@ const Home = () => {
                       <FiDownload className="text-xl" />
                     </Button>
                   </a>
-                  
+
                   <Social
                     containerStyles="flex gap-4"
                     iconStyles="w-12 h-12 border-2 border-accent/30 rounded-full flex justify-center items-center text-accent hover:bg-accent hover:text-primary hover:border-accent transition-all duration-300 hover:scale-110"
@@ -74,7 +72,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            
+
             {/* Photo Area */}
             <div className="xl:col-span-5 order-1 xl:order-2 flex justify-center xl:justify-end">
               <div className="relative">
