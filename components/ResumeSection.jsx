@@ -9,7 +9,7 @@ import {
   FaNodeJs,
 } from "react-icons/fa";
 
-import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import { SiTailwindcss, SiSpring, SiGo, SiPython } from "react-icons/si";
 
 //about data
 const about = {
@@ -86,8 +86,16 @@ const skill = {
       name: "react.js",
     },
     {
-      icon: <SiNextdotjs />,
-      name: "next.js",
+      icon: <SiSpring />,
+      name: "Spring Boot",
+    },
+    {
+      icon: <SiGo />,
+      name: "Go",
+    },
+    {
+      icon: <SiPython />,
+      name: "Python",
     },
     {
       icon: <SiTailwindcss />,
